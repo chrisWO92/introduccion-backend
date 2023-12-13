@@ -44,9 +44,9 @@ async function main() {
     //Con la sigiente instrucción se guarda el parámetro nombre en una variable y luego se pasa a la función adios()
     let nombre = await hola('Cristian')
     await hablar()
-    hablar()
-    hablar()
-    adios(nombre)
+    await hablar()
+    await hablar()
+    await adios(nombre)
     console.log('Terminando el proceso')
 
 }
